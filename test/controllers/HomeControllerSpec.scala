@@ -11,7 +11,7 @@ with GuiceOneAppPerSuite{
   describe("HomeController") {
     describe("route of HomeController#index") {
       it("should be valid") {
-        val result = route(app, FakeRequest(GET, routes.HomeController.index().toString)).get
+        val result = route(app, FakeRequest(GET, routes.HomeController.index.toString)).get
         status(result) mustBe OK
       }
     }
